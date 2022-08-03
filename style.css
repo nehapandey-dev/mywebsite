@@ -1,0 +1,115 @@
+html,
+body {
+  background:rgb(50, 49, 49);
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  border-style: none;
+}
+* {
+  position: relative;
+}
+h1{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+span {
+    color:#ff2d75;
+}
+.knowmore {
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(151, 151, 42);
+}
+.about-me h1 {
+  color: rgb(198, 193, 193);
+  animation: flash ; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 10s; /* don't forget to set a duration! */
+}
+.card{
+    width: 20%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: 1px 1px 10px rgb(241, 147, 219);
+    border-radius:12px; 
+    margin: 2%;
+   }
+
+h3{
+   color: black;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    border-radius: 12px;
+    margin: 10px 0;
+    border-style: none;
+    color: rgb(178, 174, 174);
+    box-shadow: 1px 1px 10px rgb(50, 38, 47);
+    border-radius:12px; 
+    margin: 2%;
+}
+button:hover{
+   content: "";
+   background-color: #9b566e;
+}
+.title{
+ 
+    text-align: center;
+    padding: 10px;
+    
+   }
+.des{
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .main {
+    z-index: 1;
+  }
+  .bubbles {
+    position: relative;
+    display: flex;
+    z-index: 2;
+  }
+  .bubbles span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: rgb(92, 148, 181);
+    box-shadow: 0 0 0 8px #4fc3dc44,
+    0 0 20px #4fc3dc,
+    0 0 20px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(305s /var(--i));
+  }
+  
+  .bubbles span:nth-child(even)
+  { background-color: #ff2d75;
+    box-shadow: 0 0 0 8px #4fc3dc44,
+    0 0 20px #ff2d75,
+    0 0 20px #ff2d75;
+  }
+  @keyframes animate
+  {
+    100%
+    {
+      transform: translateY(100vh) scale(0);
+    }
+    10%
+    {
+      transform: translateY(0100vh) scale(0);
+    }
+  }
+
