@@ -1,56 +1,90 @@
 html,
 body {
-  background: rgb(50, 49, 49);
-  color: white;
+  background: linear-gradient(85deg, rgb(230, 71, 171), rgb(95, 194, 207), rgb(227, 143, 236), #ee7c7c, rgb(198, 235, 137));
+  background-size: cover;
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
   border-style: none;
+  font-family: 'Orbitron', sans-serif;
 }
 
-* {
-  position: relative;
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  color: #fff;
+  flex-direction: column-reverse;
+  float: right;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+li:hover {
+  background-color: rgb(237, 237, 110);
+  text-decoration: underline;
+}
+
+.main {
+
+  background-image: url(./IMG-20210831-WA0011.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-left: 120px;
+  color: aliceblue;
+  box-shadow: 1px 1px 15px black;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   color: white;
+  width: 400px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 span {
   color: #ff2d75;
-}
-
-.knowmore {
-  text-align: center;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(151, 151, 42);
+  font-size: 35px;
 }
 
 .about-me h1 {
-  color: rgb(198, 193, 193);
-  animation: flash;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 10s;
-  /* don't forget to set a duration! */
+  color: #fff;
+  position: relative;
+  left: 500px;
+}
+
+
+.about-me h3 {
+
+  position: relative;
+  width: 400px;
+  left: 520px;
+
 }
 
 .card {
-  width: 20%;
+  width: 360px;
   display: inline-block;
-  background-color: transparent;
-  box-shadow: 1px 1px 10px rgb(241, 147, 219);
+  background: linear-gradient(rgb(103, 62, 154), rgb(224, 244, 137), rgb(202, 78, 208));
+  background-size: cover;
+  box-shadow: 1px 1px 20px black;
   border-radius: 12px;
-  margin: 2%;
+  position: relative;
+  left: 80px;
+  right: 80px;
+  top: 30px;
+  bottom: 30px;
+  margin: 20px 10px;
 }
 
 
 h3 {
-  color: black;
+  color: rgb(236, 231, 231);
+  font-size: 18px;
+
 }
 
 button {
@@ -58,17 +92,16 @@ button {
   width: 100px;
   background-color: rgb(31, 29, 29);
   border-radius: 12px;
-  margin: 10px 0;
   border-style: none;
-  color: rgb(178, 174, 174);
+  color: #fff;
   box-shadow: 1px 1px 10px rgb(50, 38, 47);
   border-radius: 12px;
-  margin: 2%;
+
 }
 
 button:hover {
   content: "";
-  background-color: #9b566e;
+  background-color: #ed5dc2;
 }
 
 .title {
@@ -79,7 +112,7 @@ button:hover {
 }
 
 .des {
-  padding: 3px;
+  padding-bottom: 30px;
   text-align: center;
   padding-top: 10px;
   border-bottom-right-radius: 5px;
