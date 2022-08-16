@@ -1,7 +1,7 @@
 html,
 body {
-  background: linear-gradient(85deg, rgb(230, 71, 171), rgb(95, 194, 207), rgb(227, 143, 236), #ee7c7c, rgb(198, 235, 137));
-  background-size: cover;
+  background-color: black;
+  /* background-size: cover; */
   margin: 0;
   padding: 0;
   border-style: none;
@@ -57,20 +57,19 @@ span {
 }
 
 
-.about-me h3 {
-
+.about-me p {
   position: relative;
   width: 400px;
   left: 520px;
+  line-height: 25px;
 
 }
 
 .card {
   width: 360px;
   display: inline-block;
-  background: linear-gradient(rgb(103, 62, 154), rgb(224, 244, 137), rgb(202, 78, 208));
+  background: linear-gradient(rgb(127, 38, 237), rgb(203, 238, 48), rgb(212, 41, 221));
   background-size: cover;
-  box-shadow: 1px 1px 20px black;
   border-radius: 12px;
   position: relative;
   left: 80px;
@@ -94,7 +93,7 @@ button {
   border-radius: 12px;
   border-style: none;
   color: #fff;
-  box-shadow: 1px 1px 10px rgb(50, 38, 47);
+  box-shadow: #fff;
   border-radius: 12px;
 
 }
@@ -123,39 +122,3 @@ button:hover {
   z-index: 1;
 }
 
-.bubbles {
-  position: relative;
-  display: flex;
-  z-index: 2;
-}
-
-.bubbles span {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  margin: 0 4px;
-  border-radius: 50%;
-  background-color: rgb(92, 148, 181);
-  box-shadow: 0 0 0 8px #4fc3dc44,
-    0 0 20px #4fc3dc,
-    0 0 20px #4fc3dc;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(305s /var(--i));
-}
-
-.bubbles span:nth-child(even) {
-  background-color: #ff2d75;
-  box-shadow: 0 0 0 8px #4fc3dc44,
-    0 0 20px #ff2d75,
-    0 0 20px #ff2d75;
-}
-
-@keyframes animate {
-  100% {
-    transform: translateY(100vh) scale(0);
-  }
-
-  10% {
-    transform: translateY(0100vh) scale(0);
-  }
-}
